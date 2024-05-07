@@ -1,5 +1,4 @@
 package Punit_DSA.Arrays;
-import java.util.*;
 public class MaxConsOnes {
     public static void main(String[] args) {
         int nums[] = { 1, 1, 0, 1, 1, 1 };
