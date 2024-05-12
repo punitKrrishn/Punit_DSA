@@ -8,10 +8,11 @@ public class TwoSum {
         int n = 5;
         int[] arr = {2, 6, 5, 8, 11};
         int target = 14;
-        String ans =  twoSum(n,arr,target);
-        //int[] ans = twoSum(n, arr, target);
+        //String ans =  twoSum(n,arr,target);
+        int[] ans = twoSumHashing(n, arr, target);
+       // System.out.println("ans :- "+ans));
 
-        System.out.println("ans :- "+ans);
+        System.out.println("ans :- "+Arrays.toString(ans));
     }
 
     public static String twoSumBruteForce(int n, int []arr, int target) {
