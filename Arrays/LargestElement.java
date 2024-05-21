@@ -11,6 +11,25 @@ public class LargestElement {
 
     }
 
+        //-------------------------------Brute force solution------------------------------------
+
+    static int indexOfLargestElement(int[] arr) { 
+        for(int i=0; i<arr.length; i++) {
+            boolean isGreater = true;
+            for(int j=0; j<arr.length; j++) {
+                if(arr[j] > arr[i]) {
+                    isGreater = false;
+                    break;
+                }
+            }
+            if(isGreater) {
+                return i;
+            }
+        }
+        return -1;
+    }
+    //-------------------------------Optimal solution------------------------------------
+
     static int largestElement(int[] arr, int n) {
         int max = arr[0];
         for(int i = 0; i<arr.length; i++) {
