@@ -26,7 +26,7 @@ public class RotateMatrix {
         return rotated;
     }
 
-    //---------------------Optimal Solution----------------------------
+    //---------------------Optimal Solution T.C = O(n)----------------------------
 
     static void rotateOptimal(int[][] matrix) {
         for (int i = 0; i < matrix.length; i++) {
